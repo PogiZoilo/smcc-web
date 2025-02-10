@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Saint Michael College of Caraga</title>
 
-  <link rel="stylesheet" href="assets/css/colors.css">
-  <link rel="stylesheet" href="assets/css/navbar.css">
-  <link rel="stylesheet" href="assets/css/fonts.css">
+  <link rel="stylesheet" href="smcc/css/colors.css">
+  <link rel="stylesheet" href="smcc/css/navbar.css">
+  <link rel="stylesheet" href="smcc/css/fonts.css">
   <link rel="stylesheet" href="style.css">
   
   <!-- BOOTSTRAP -->
@@ -37,7 +37,7 @@
             <div class="bg-darkblue border-0">
               <div class="row p-auto">
                 <div class="col-sm-3">
-                      <img alt="" height="40px" width="40px" src="assets/images/smcc-logo.png" ">
+                      <img alt="" height="40px" width="40px" src="smcc/images/smcc-logo.png" ">
                 </div>
                 <div class="col-sm-auto">
                   <h2 class="text-light bg-darkblue syncopate pt-1">
@@ -77,8 +77,8 @@
                   data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About SMCC
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item small" href="assets/about/vmgo.html">Vision & Mission</a>
-                  <a class="dropdown-item small" href="about/core-values.html">Core Values</a>
+                  <a class="dropdown-item small" href="smcc/about/vmgo.html">Vision & Mission</a>
+                  <a class="dropdown-item small" href="smcc/about/corevalues.html">Core Values</a>
                 </div>
               </li>
             </div>
@@ -87,17 +87,24 @@
   
             <div class="fadeInLeft-3">
               <li class="nav-item px-2">
-                <a class="nav-link small d-flex px-1 align-items-center" href="courses-offered.html">
+                <a class="nav-link small d-flex px-1 align-items-center" href="smcc/courses-offered/courses-offered.html">
                   Courses Offered
                 </a>
               </li>
             </div>
-  
+
             <div class="fadeInLeft-4">
-              <li class="nav-item px-2">
-                <a class="nav-link small d-flex px-1 align-items-center" href="services.html">
-                  Services
+              <li class="nav-item px-2 dropdown">
+                <a class="nav-link small d-flex px-1 align-items-center" href="" id="navbarDropdown" role="button"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Services
                 </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item small" href="smcc/services/admission-scholarship-services.html">Admission Scholarship Services</a>
+                  <a class="dropdown-item small" href="#">Auxiliary Services</a>
+                  <a class="dropdown-item small" href="#">Guidance Services</a>
+                  <a class="dropdown-item small" href="#">Health Services</a>
+                  <a class="dropdown-item small" href="#">Safety and Security Services</a>
+                </div>
               </li>
             </div>
   
@@ -119,21 +126,21 @@
 
     <section class="home" id="home">
 
-      <div class="home-content">
+      <div class="home-content" data-aos="slide-right" data-aos-duration="1000">
           <h1>Saint Michael College of Caraga</h1>
           <p>In this world, wherever there is light, there are always shadows. As long as there is a concept of victors, the vanquished will also exist. The selfish desire for peace gives rise to war. And hatred is born in order to love.</p>
 
       </div>
 
 
-          <div class="home-img">
-              <img src="assets/images/smcc-logo.png">
+          <div class="home-img" data-aos="slide-left" data-aos-duration="1000">
+              <img src="smcc/images/smcc-logo.png">
           </div>
 
     </section>
 
 
-    <section class="education" id="education">
+    <section class="milestone" id="milestone">
       
       <h2 class="heading">SMCC MILESTONES</h2>
       <div class="timeline-items">
@@ -492,25 +499,27 @@
   
   </section>
 
+  
+
 
   </main>
 
   <footer class="footer">
     <ul class="list">
         <li>
-            <a href="#">Home</a>
+            <a href="#home">Home</a>
         </li>
         <li>
-            <a href="#">Courses Offered</a>
+            <a href="#courses-offered">Courses Offered</a>
         </li>
         <li>
-            <a href="#">Services</a>
+            <a href="#services">Services</a>
         </li>
         <li>
-            <a href="#">Contact Us</a>
+            <a href="#contact-us">Contact Us</a>
         </li>
         <p class="copyright">
-            @ Joshua Almodiel | Saint Michael College of Caraga
+            @ Jeff Zoilo | Saint Michael College of Caraga
         </p>
     </ul>
 
