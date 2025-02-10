@@ -1,5 +1,6 @@
 .navbar-nav .nav-link {
     margin: auto;
+    margin-right: 24px;
     padding: auto;
     height: 50px;
     line-height: 20px;

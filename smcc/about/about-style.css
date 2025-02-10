@@ -24,7 +24,7 @@ html {
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     width: 100%;
     padding: 8px 0;
@@ -39,19 +39,12 @@ html {
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a {
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover {
-    transition: 0.5s;
-    color: #ffc107;
-    text-decoration: none;
-}
 .footer ul li{
     display: inline-block;
     padding: 0 15px;
+}
+.footer ul li img {
+    width: 46px;
 }
 .footer .copyright {
     margin-top: 20px;

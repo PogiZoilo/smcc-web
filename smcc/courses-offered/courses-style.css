@@ -9,8 +9,9 @@ body {
 
 html {
     height: 100%;
-    width: 100%;
     z-index: 5;
+    overflow-x: hidden;
+    width: 100%;
 }
 
 .courses-box {
@@ -109,6 +110,7 @@ html {
     padding: 8px 0;
     background-color: #050045;
     border-top: 7px solid #ffc107;
+    margin-top: 24px;
 }
 .footer ul {
     margin-top: 0;
@@ -118,19 +120,12 @@ html {
     margin-bottom: 0;
     text-align: center;
 }
-.footer ul li a {
-    color: white;
-    border-bottom: 3px solid transparent;
-    transition: 0.3s ease-in-out;
-}
-.footer ul li a:hover {
-    transition: 0.5s;
-    color: #ffc107;
-    text-decoration: none;
-}
 .footer ul li{
     display: inline-block;
     padding: 0 15px;
+}
+.footer ul li img {
+    width: 46px;
 }
 .footer .copyright {
     margin-top: 20px;
@@ -143,7 +138,8 @@ html {
 
 @media(max-width:1366px) {
     .courses .wrapper {
-        grid-template-columns: repeat(2,3fr);
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
     }
     .footer {
         padding: 2rem 3%;
